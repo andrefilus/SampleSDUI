@@ -19,12 +19,12 @@ class SampleSDUIRepositoryImpl(
     private val service: SampleSDUIService
 ) : SampleSDUIRepository {
     override suspend fun getDynamic(): Flow<List<SimpleProperties>> = flow {
-        emit(service.getDynamicExample().toListSimpleProperties())
-//        emit(
-//            gson.fromJson(
-//                context.loadJSONFromAsset("dynamic"),
-//                Array<SimplePropertiesResponse>::class.java
-//            ).asList().toListSimpleProperties()
-//        )
+//        emit(service.getDynamicExample().toListSimpleProperties())
+        emit(
+            gson.fromJson(
+                context.loadJSONFromAsset("dynamic"),
+                Array<SimplePropertiesResponse>::class.java
+            ).asList().toListSimpleProperties()
+        )
     }
 }

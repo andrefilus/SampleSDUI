@@ -26,6 +26,28 @@
     }
   },
   {
+    "key": "CraftDTextView",
+    "value": {
+      "textSize": "20",
+      "textColorHex": "#FF0000",
+      "align": "CENTER",
+      "textStyle": "BOLD",
+      "textAllCaps": true,
+      "textHtml": "<p><b>Este é um texto em HTML</b></p><p>Isso é <i>itálico</i></p>"
+    }
+  },
+  {
+    "key": "CraftDTextView",
+    "value": {
+      "textSize": "20",
+      "textColorHex": "#FF0000",
+      "align": "CENTER",
+      "textStyle": "BOLD",
+      "textAllCaps": true,
+      "textHtml": "<p><b>Este é um texto em HTML</b></p><p>Isso é <u>negrito</u></p>"
+    }
+  },
+  {
     "key": "CraftDButton",
     "value": {
       "text": "Some Action :)",
